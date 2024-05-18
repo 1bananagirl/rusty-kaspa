@@ -22,7 +22,7 @@ async fn node_connect() -> anyhow::Result<String,()>{
 
     let rt = Runtime::new().unwrap();
     let result = rt.block_on(async {
-        println!("try connecting to node {}", "ws://192.168.178.65:17110");
+        println!("try connecting to node {}", "ws://192.168.11.11:17110");
 
         // Enter a node IP address in the local network if needed.
         let url = Some("ws://192.168.11.11:17110".to_string());
