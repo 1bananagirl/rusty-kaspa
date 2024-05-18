@@ -24,3 +24,19 @@ Link Kaspa crates and write code inside bridgeflutter/src/api/.
 
 In this branch we use bridgeflutter/src/api/simple.rs which needs to be published in bridgeflutter/src/api/mod.rs.
 
+We display some network data and Kaspa node server information.
+
+The data is refreshed on each click on the button. If the node goes down, the flutter interface freezes with the current blocking test implementation.
+
+### Launch Flutter in desktop environment
+
+To launch on Linux desktop :
+
+    flutter_rust_bridge_codegen generate; flutter run -d linux
+
+### Launch in browser environment
+
+To launch with Chrome:
+
+flutter_rust_bridge_codegen build-web --rust-root ../bridgeflutter/
+
